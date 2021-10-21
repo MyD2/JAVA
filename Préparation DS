@@ -1,0 +1,46 @@
+let Animals = [
+
+    {name: 'Butters', age: 3, type: '🐶'},
+
+    {name: 'Lizzy',  age: 6, type: '🐶'}, 
+
+    {name: 'Minou', age: 10, type: '🐱'},
+
+ {name: 'Butt', age: 33, type: '🐶'},
+
+    {name: 'Liza',  age: 62, type: '🐶'}, 
+
+    {name: 'Mina', age: 100, type: '🐱'},
+
+
+];
+
+
+function dog(v) {
+if(v.type==='🐶')
+return true
+
+
+}
+
+function add(prev,curr,i,t){
+  
+  let finale = prev + curr;
+  return finale;
+}
+
+
+function fois(v){
+    let tempAge =v.age;
+    let k = tempAge *7;
+    return k;
+}
+
+
+var valeurInitiale = 0;
+
+let ok = Animals.filter(dog).map(fois).reduce(add);
+
+
+
+console.log(`L'age  moyen des chiens est de ${ok}`);
